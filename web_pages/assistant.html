@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PC Purchase Assistant</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script type="text/javascript" src="../scripts.js"></script>
+    </head>
+    <body onload = "loadFunction()">
+        <header><h1 id="main_header_text">PC PURCHASE ASSISTANT</h1></header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li class = "current_nav">Assistant</li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <br><br>
+        <main>
+            <div id = main_wrapper>
+                <div class = form_style>
+                    <form method ="get">
+                        <h2>PC Purchase Assistant</h2>
+                        <p>Fill out the following information, when you are done press the "Calculate Results" button and based on the feedback you will receive a link to either a computer, or parts that you can purchase!</p>
+                        <br>
+                        <div class = assistant_form>
+                        <p class = "type_class">Preferred system type?</p>
+                        <label class = "type_class"><input type = "radio" name = "form_desktop" id = "form_desktop" value = "Desktop" onclick="ShowMore()">Desktop</label><br>
+                        <label class = "type_class"><input type = "radio" name = "form_desktop" id = "form_laptop" value = "Laptop" onclick="ShowMore()">Laptop</label><br>
+                        <p class = "buy_class">Do you want to buy or build this computer?</p>
+                        <label class = "buy_class"><input type = "radio" name = "form_buy" id = "form_buy" value = "Buy" onclick="ShowMore2()">Buy</label><br>
+                        <label class = "buy_class"><input type = "radio" name = "form_buy" id = "form_build" value = "Build" onclick="ShowMore2()">Build</label><br>
+                        <p class = "other_class">Which one is more important to you when buying a computer?</p>
+                        <label class = "other_class"><input type = "radio" name = "form_other" id = "form_price" value = "Price">Price</label><br>
+                        <label class = "other_class"><input type = "radio" name = "form_other" id = "form_performance" value = "Performance">Performance</label><br>
+                        <p class = "other_class">What are some other features you like?</p>
+                        <label class = "other_class"><input type = "radio" name = "form_OS" id = "form_macos" value = "MacOS">Security and Reliability</label><br>
+                        <label class = "other_class"><input type = "radio" name = "form_OS" id = "form_windows" value = "Windows">Customization and Additional Software</label><br>
+                        <p class = "other_class">Price range?</p>
+                        <label class = "other_class"><input type = "radio" name = "form_Price" id = "form_750" value = "750">Less than $750.00</label><br>
+                        <label class = "other_class"><input type = "radio" name = "form_Price" id = "form_1000" value = "1000">Between $750.00 and $1500.00</label><br>
+                        <label class = "other_class"><input type = "radio" name = "form_Price" id = "form_1500" value = "1500">More than $1500.00</label><br> 
+                        <!-- Build Options -->
+                        <p class = "build_class">What will this system be used for?</p>
+                        <label class = "build_class"><input type = "radio" name = "form_use" id = "form_simple" value = "simple">Simple tasks</label><br>
+                        <label class = "build_class"><input type = "radio" name = "form_use" id = "form_gaming" value = "gaming">Gaming or Art</label><br>
+                        <p class = "build_class">Memory Size? (Hard Drive)</p>
+                        <label class = "build_class"><input type = "radio" name = "form_storage" id = "form_small" value = "small">Small</label><br>
+                        <label class = "build_class"><input type = "radio" name = "form_storage" id = "form_medium" value = "medium">Medium</label><br>
+                        <label class = "build_class"><input type = "radio" name = "form_storage" id = "form_large" value = "large">Large</label><br>
+                        <p class = "build_class">Which one is more important to you when buying a computer?</p>
+                        <label class = "build_class"><input type = "radio" name = "form_quality" id = "form_price2" value = "Price">Price</label><br>
+                        <label class = "build_class"><input type = "radio" name = "form_quality" id = "form_performance2" value = "Performance">Performance</label><br><br><br>
+                        </div>
+                        <input type = "button" value="Calculate Results" class = "assistant_buttons" onclick="CalculateResults()">
+                        <input type = "reset" value="Start Over" class = "assistant_buttons" onclick="Reset()">
+                        <br><br><br>
+                    </form>
+                    <p id = "output" class = "assistant_text"></p>
+                    <p id = "output2" class = "assistant_text"></p>
+                    <a href = "#" id = "image_link" target="_blank"><img id = "image_output" src="" alt="Computer Image"></a>
+                </div>
+            </div>
+        </main>
+        <footer id = "footer_id"></footer>
+    </body>  
+</html>
+    

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PC Purchase Assistant</title>
+        <link rel="stylesheet" href="../styles.css">
+        <script type="text/javascript" src="../scripts.js"></script>
+    </head>
+    <body onload="loadFunction()">
+        <header><h1 id="main_header_text">PC PURCHASE ASSISTANT</h1></header>
+        <nav>
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li class = "current_nav">Tips</li>
+              <li><a href="assistant.html">Assistant</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <br><br>
+        <main>
+            <div id = "main_wrapper">
+
+                <div id = "grid_wrapper_tips">
+                    <div id = "tips_1c"><h3 class = "main_header">Buy VS Build</h3></div>
+                    <br><br>
+                    <div id = "tips_1a">
+                        <div class = "tips_images">
+                          <img width="150" src="../pictures/coins.jpg" alt="A large amount of coins.">
+                        </div>
+                        <h2>Buy</h2>
+                        <p>
+                        There are many reasons to purchase a computer, it's a very simple process that usually just involves picking out the right operating system and hard drive capacity that you're looking for.
+                        For example if you wanted to buy a gaming laptop you can just search for "gaming laptop" on a shopping website and you will likely find results relevant to your search. Things start to get more complicated 
+                        once you start looking for more specific specs in a machine however.
+                        </p>
+                    </div>
+                    <div id = "tips_1b">
+                        <div class = "tips_images">
+                          <img width="150" src="../pictures/random_tools.jpg" alt="A set of random tools.">
+                        </div>
+                        <h2>Build</h2>
+                        <p>
+                        Building a PC from scratch has a few benefits, but is also quite a bit more complicated to accomplish. Usually it's less expensive in the long run and can be pricy at first, video cards alone can cost 
+                        thousands of dollars and that's just one part! It's very important to keep in mind what parts you purchase and how they are compatible with eachother. Another added benefit to building your own PC is that
+                        you will have knowledge of the parts you purchased and the machine you built, so it can be easier to upgrade in the future compared to a pre-built computer.
+                        </p>
+                    </div>
+                    <div id = "tips_2a">
+                        <h2>What do I need to build a computer?</h2>
+                        <!-- Table -->
+                        <div id = "tips_2b">
+                          <table id = "tips_table">
+                            <tr>
+                              <th>Tools</th>
+                              <th>Parts</th>
+                            </tr>
+                            <tr>
+                              <td>Anti-Static bracelet or mat</td>
+                              <td>CPU and cooler</td>
+                            </tr>
+                            <tr>
+                              <td>Philips #2 screwdriver - magnetized is a plus</td>
+                              <td>Memory (RAM and hard drives)</td>
+                            </tr>
+                            <tr>
+                              <td>Flathead screwdriver</td>
+                              <td>USB flash drive - required for installing the operating system.</td>
+                            </tr>
+                            <tr>
+                              <td>Cable ties</td>
+                              <td>Keyboard/Mouse/Monitor</td>
+                            </tr>
+                            <tr>
+                              <td>Flashlight</td>
+                              <td>Desktop case + Motherboard</td>
+                            </tr>
+                            <tr>
+                              <td>Thermal paste - required to install the CPU</td>
+                              <td>Video Card</td>
+                            </tr>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+                <div id = "tips_3a">
+                  <!-- Video -->
+                    <div class = "video_container">
+                      <video class="tips_videos" controls = "controls"  width="300" height="300" poster="../pictures/tips_video_photo.jpg"> 
+                       <source src = "../pictures/tips_video.mp4" type = "video/mp4">
+                       <source src = "../pictures/tips_video.ogg" type = "video/ogg">
+                       Video describing how to build a computer.
+                      </video>
+                    </div>
+                    <div id = "tips_3b">
+                      <h2>How To Build</h2>
+                      <p id = "tips_3b_p"> 
+                        This video demonstrates how to build a computer from scratch, it's short and simple but is just meant to just give a general idea of what the process looks like while not being too long.
+                        One thing to note is that because the video is very short, some minor things are left out like the operating system installation; as well as how to apply thermal paste. If you are interested in building your own computer, it may be a good idea to look up how to do these as well since
+                        they are not covered in the video.
+                      </p>
+                    </div>
+                    <div id = "tips_3c">
+                      <h2>Additional Tips</h2>
+                      <!-- List -->
+                      <ol id = "tips_3d">
+                        <li>Power supply wattage - It's reccomended that you add the sum of the watts of all the parts you want to purchase and get a power supply with a higher rating than this total, usually 50% more. 
+                          If the total wattage of the power supply is too low, then the power supply will not be able to give enough power to the other components, this can lead to some pretty serious technical issues like system crashing.  
+                        </li>
+                        <li>Installing parts - Make sure to be careful before installing any parts, it can be easy to accidentally conduct electricity so it is a good idea to wear an anti-static wrist strap to prevent damage to the components.
+                          Also, each part like the CPU for example, requires some precision to really get the installation done right, try to take things slow when placing the part into the slot or port. Finally, make sure to not touch the connections of the part as this may cause damage to it as well.
+                        </li>
+                        <li>Cable management and airflow - Another thing to keep in mind is having good ventilation within the desktop case, as well as making sure cables are not disorganized in any way. With bad cable management or airflow you may run
+                          into overheating issues as the parts can more easily get clogged with dust. This in turn, can cause your desktop to have a shorter lifespan overall.
+                        </li>
+                        <li>BIOS and last steps - Once all the physical parts are installed, it's time to check the software. We want to first insert the installation media which is usually a CD or USB with the operating system installed on it.
+                          Next, the BIOS should load up which is where you want to configure the proper settings for the motherboard, after this you just want to go through the steps mentioned on the installation media and you should be good to go. You may have to do some troubleshooting if something wasn't installed properly and the BIOS can help you with this as well,
+                          It's generally a good idea to double check that all parts and peripherals are connected properly before turning on the system for the first time.
+                        </li>
+                      </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id = "footer_id"></footer>
+    </body>
+</html>

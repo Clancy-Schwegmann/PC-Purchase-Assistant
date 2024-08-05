@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PC Purchase Assistant</title>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+
+    <body onload = "loadFunction()">
+        <header><h1>PC PURCHASE ASSISTANT</h1></header>
+        <nav>
+            <ul>
+                <li class = "current_nav">Home</li>
+                <li><a href="web_pages/tips.html">Tips</a></li>
+                <li><a href="web_pages/assistant.html">Assistant</a></li>
+                <li><a href="web_pages/about.html">About</a></li>
+                <li><a href="web_pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id = "main_wrapper">
+                <div id = "grid_wrapper_home">
+                    <div id = "home_1a"> <img id="home_1a-image" src="pictures/networks.png" width = "250" alt="Smartphone with reflective screen."> </div>
+                    <div id = "home_1b">
+                        <div id = home_1b-text>
+                            <h2>Site Info</h2>
+                            <p>    
+                            This website serves as a guide for anyone trying to purchase or build a new computer, 
+                            you can use the navigation bar located at the bottom of the webpage to view other sections of the website.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div id = "home_1c"><p>&nbsp;A</p></div> -->
+                    <div id = "home_2a">
+                        <h2>Navigation Description</h2>
+                        <ul>
+                            <li>Home - The main page used to access other parts of the website, also explains how this site works.</li>
+                            <li>Tips - This page gives various tips on how to build a PC as well as what to think about when building one. For example, it's important to keep in mind the wattage of each individual part
+                            before deciding to purchase the power supply.</li>
+                            <li>Assistant - This contains the main purpose of the website, which just asks a series of questions and afterwards provides a reccomended PC to buy based on the calculated results.
+                            Basically if you want to buy a desktop for more than $1,000 and prefer a Windows PC the assistant will reccomend something similar to a gaming computer and then provide a link on where to purchase it.
+                            </li>
+                            <li>About - Provides a summary on the website as well as additional citations.</li>
+                        </ul>
+                    </div>
+                    <div id = "home_2b"><img id="home_2b_image" src="pictures/compass.jpg" width="250" alt="Image of a compass."></div>
+                    <div id = "home_3a">
+                        <h3>OS Differences</h3>
+
+                    </div>
+                    <div id = "home_3b">
+                        <div class = "home_3_images">
+                            <img id = "Windows_Image" src = "pictures/windows.jpg" width ="250"  alt = "Picture of windows. (not the computer)">
+                        </div>
+                        <h2>Windows</h2>
+                        <ul>
+                            <li> Very high software compatibility, most PC users use Windows so most software works for Windows. Great for PC gaming. </li>
+                            <li> Easy operating system to learn and customize. </li>
+                            <li> Works well with additional peripherals. (like speakers or cameras)</li>
+                            <li> Less Secure.</li>
+                            <li> Can easily upgrade or build your own system using Windows or Linux.</li>
+                        </ul>
+                    </div>
+                    <div id = "home_3c">
+                        <div class = "home_3_images">
+                            <img id = "MacOS_Image" src = "pictures/apple.jpg" width ="250" alt = "Picture of an apple. (not the computer)">
+                        </div>
+                        <h2>Mac OS</h2>
+                        <ul>
+                            <li> Simple and easy to learn user interface. </li>
+                            <li> Uses gestures and touchpad navigation. Great at multitasking. </li>
+                            <li> Usually more secure than Windows. Viruses and malware is less common.</li>
+                            <li> Can be very expensive.</li>
+                            <li> More difficult to build from scratch or upgrade hardware.</li>
+                            <li> Integrates with other Apple products including the AppStore and GarageBand, for example.</li>
+                         </ul>
+                    </div>
+                    <div id = "home_3d">
+                        <div class = "home_3_images">
+                            <img id = "Linux_Image" src = "pictures/sliding_penguin.gif" width ="250" alt = "Penguin sliding on ice.">
+                        </div>
+                        <h2>Linux</h2>
+                        <ul>
+                          <li> Free and Open Source, this means you can download the system for free but the hardware will have to be purchased seperately. </li>
+                          <li> Multiple options of operating systems called distros. Can pick and choose the look and feel of your system by default. </li>
+                          <li> Very secure, popular OS choice for servers.</li>
+                          <li> Works with the least amount of software compared to the other two systems, but linux compatibility is increasing over time.</li>
+                          <li> Compatible with older computer hardware.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id = "footer_id"></footer>
+    </body>
+</html>
